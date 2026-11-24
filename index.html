@@ -17,7 +17,7 @@ a{color:inherit;text-decoration:none}.container{width:min(1160px,92%);margin:aut
 .links{display:flex;gap:17px;align-items:center;font-size:13px;color:#ddd}.links a:hover{color:var(--gold)}
 .btn{display:inline-block;background:var(--gold);color:#111;padding:13px 20px;border-radius:3px;font-weight:800;font-size:13px;letter-spacing:.4px;transition:.2s;text-align:center}.btn:hover{transform:translateY(-2px);filter:brightness(1.04)}
 .btn.outline{background:transparent;border:1px solid var(--gold);color:var(--gold)}
-.hero{min-height:640px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(8,8,8,.98) 0%,rgba(8,8,8,.88) 34%,rgba(8,8,8,.58) 68%,rgba(8,8,8,.40) 100%),linear-gradient(0deg,#101010 0%,rgba(16,16,16,.06) 36%,rgba(16,16,16,.30) 100%),url('assets/mobile-gym.jpeg') center/cover}
+.hero{min-height:640px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,#090909 0%,rgba(9,9,9,.92) 40%,rgba(9,9,9,.42) 100%),url('assets/mobile-gym.jpeg') center/cover}
 .hero:after{content:"";position:absolute;inset:auto 0 0;height:100px;background:linear-gradient(transparent,var(--black))}
 .hero-content{position:relative;z-index:1;padding:80px 0;max-width:720px}
 .kicker{color:var(--gold);font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:800}
@@ -30,9 +30,9 @@ section{padding:76px 0}.section-head{max-width:760px;margin-bottom:34px}.section
 .service{border:1px solid var(--line);padding:23px;background:#171717;border-radius:5px}
 .cream .service{background:#fff;border:1px solid #e7e2d7}
 .service .icon{font-size:26px;margin-bottom:10px}.service h3{margin:0 0 8px;font-size:19px}.service p{font-size:14px;color:#c2c2c2;margin:0}.cream .service p{color:#555}
-.service .price{color:var(--gold);font-weight:bold;margin-top:12px;font-size:14px}
+.service .price{display:inline-block;color:var(--gold);font-weight:bold;margin-top:12px;font-size:14px}
 .feature{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
-.photo{min-height:400px;border-radius:6px;background-position:center;background-size:cover;position:relative;overflow:hidden;isolation:isolate}.photo:after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(135deg,rgba(16,16,16,.28),rgba(16,16,16,.08) 45%,rgba(16,16,16,.52)),linear-gradient(0deg,rgba(16,16,16,.50),transparent 42%);mask-image:linear-gradient(to bottom,transparent 0%,black 14%,black 82%,transparent 100%)}.cream .photo:after{background:linear-gradient(135deg,rgba(247,245,239,.12),rgba(247,245,239,.02) 48%,rgba(247,245,239,.26)),linear-gradient(0deg,rgba(247,245,239,.35),transparent 48%);mask-image:linear-gradient(to bottom,transparent 0%,black 14%,black 82%,transparent 100%)}
+.photo{min-height:400px;border-radius:6px;background-position:center;background-size:cover}
 .photo.mobile{background-image:url('assets/mobile-gym.jpeg')}.photo.stretch{background-image:url('assets/assisted-stretch.jpeg')}.photo.recovery{background-image:url('assets/cryotherapy.jpeg')}.photo.training{background-image:url('assets/personal-training.jpeg')}.photo.massage{background-image:url('assets/massage.jpeg')}
 .checklist{padding:0;list-style:none}.checklist li{margin:10px 0}.checklist li:before{content:"✓";color:var(--gold);font-weight:bold;margin-right:10px}
 .credentials{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.pill{border:1px solid #bdb8ad;background:#fff;padding:9px 12px;border-radius:100px;font-size:12px;color:#000;font-weight:700}
@@ -41,9 +41,9 @@ section{padding:76px 0}.section-head{max-width:760px;margin-bottom:34px}.section
 .callout{background:var(--gold);color:#111;padding:44px 0}.callout h2{font-size:clamp(30px,4vw,44px);margin:0 0 12px}.callout p{max-width:650px}
 .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:22px}.contact-card{border:1px solid #333;padding:25px;border-radius:5px}.contact-card p{color:#bbb}.contact-card a:not(.btn){color:var(--gold)}
 .map{width:100%;height:340px;border:0;border-radius:5px}
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery figure{margin:0;background:linear-gradient(#171717,#101010);border-radius:5px;overflow:hidden;position:relative}.gallery img{width:100%;height:220px;object-fit:cover;display:block;filter:brightness(.78) contrast(1.04);mask-image:linear-gradient(to bottom,black 0%,black 70%,transparent 100%)}.gallery figcaption{padding:10px 12px;font-size:13px;color:#ddd;margin-top:-22px;position:relative;z-index:1;background:linear-gradient(transparent,rgba(17,17,17,.95))}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery figure{margin:0;background:#171717;border-radius:5px;overflow:hidden}.gallery img{width:100%;height:220px;object-fit:cover;display:block}.gallery figcaption{padding:10px 12px;font-size:13px;color:#ddd}
 footer{border-top:1px solid #333;padding:28px 0;color:#999;font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.small{font-size:12px;color:#aaa}
-@media(max-width:850px){.links{display:none}.hero{min-height:570px;background-position:62% center}.grid{grid-template-columns:1fr 1fr}.feature{grid-template-columns:1fr}.photo{min-height:320px}.contact-grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:850px){.links{display:none}.hero{min-height:570px}.grid{grid-template-columns:1fr 1fr}.feature{grid-template-columns:1fr}.photo{min-height:320px}.contact-grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.grid{grid-template-columns:1fr}.hero-content{padding:65px 0}.btn{padding:12px 15px}.nav-inner{padding:9px 0}.logo-wrap{max-width:140px}.gallery img{height:190px}}
 </style>
 </head>
@@ -107,7 +107,7 @@ footer{border-top:1px solid #333;padding:28px 0;color:#999;font-size:13px}.foote
 <div class="photo training" role="img" aria-label="A PLUS fitness coaching"></div>
 </div></section>
 
-<section id="gallery"><div class="container"><div class="section-head"><div class="kicker">Real A PLUS Experiences</div><h2>Our work. Our <span class="gold">community.</span></h2><p>Real photos from A PLUS Body Sculpting and Wellness and A PLUS FIT.</p></div>
+<section id="gallery"><div class="container"><div class="section-head"><div class="kicker">Real A PLUS Experiences</div><h2>Our work. Our <span class="gold">community.</span></h2><p>Real photos from A PLUS Body Sculpting and Wellness and A PLUS FIT, including massage, mobility, cryotherapy and client progress showcases.</p></div>
 <div class="gallery">
 <figure><img src="assets/mobile-gym.jpeg" alt="A PLUS FIT mobile gym trailer"><figcaption>Mobile Gym</figcaption></figure>
 <figure><img src="assets/group-fitness.jpeg" alt="A PLUS group fitness workout"><figcaption>Community Fitness</figcaption></figure>
@@ -117,6 +117,18 @@ footer{border-top:1px solid #333;padding:28px 0;color:#999;font-size:13px}.foote
 <figure><img src="assets/personal-training.jpeg" alt="Fitness coaching"><figcaption>Personal Training</figcaption></figure>
 <figure><img src="assets/assisted-stretch.jpeg" alt="Assisted stretching session"><figcaption>Assisted Stretching</figcaption></figure>
 <figure><img src="assets/treatment-gallery.jpeg" alt="Additional A PLUS treatment photo"><figcaption>Wellness Treatment</figcaption></figure>
+
+<figure><img src="assets/massage-room.jpeg" alt="A PLUS massage treatment room"><figcaption>Massage Treatment Room</figcaption></figure>
+<figure><img src="assets/massage-neck-treatment.jpeg" alt="Therapeutic neck and facial massage"><figcaption>Therapeutic Bodywork</figcaption></figure>
+<figure><img src="assets/sports-massage.jpeg" alt="Sports massage treatment"><figcaption>Sports Massage</figcaption></figure>
+<figure><img src="assets/cryo-leg-treatment.jpeg" alt="Localized cryotherapy treatment"><figcaption>Localized Cryotherapy</figcaption></figure>
+<figure><img src="assets/athlete-stretching.jpeg" alt="Assisted stretching and mobility session"><figcaption>Mobility & Stretching</figcaption></figure>
+<figure><img src="assets/foot-mobility.jpeg" alt="Foot and ankle mobility treatment"><figcaption>Foot & Ankle Mobility</figcaption></figure>
+<figure><img src="assets/outdoor-recovery.jpeg" alt="Outdoor recovery massage treatment"><figcaption>Recovery Services</figcaption></figure>
+<figure><img src="assets/cryo-slimming-before-after-1.jpeg" alt="Cryo slimming before and after client progress"><figcaption>Cryo Slimming Progress</figcaption></figure>
+<figure><img src="assets/cryo-facial-before-after.jpeg" alt="Cryo facial before and after"><figcaption>Cryo Facial Progress</figcaption></figure>
+<figure><img src="assets/cryo-slimming-before-after-2.jpeg" alt="Cryo slimming before and after client progress"><figcaption>Cryo Slimming Progress</figcaption></figure>
+
 </div></div></section>
 
 <section><div class="container"><div class="section-head"><div class="kicker">Wellness Programs</div><h2>Build your own <span class="gold">recovery routine.</span></h2><p>Ask about wellness packages and memberships that combine services to help you stay consistent.</p></div>
